@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Country Selector</title>
+<b>Swastasks country agents </b>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #38bdf8;
+    color: black;
+}
+
+#error {
+    margin-top: 20px;
+    color: #f87171;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Select Your Country</h2>
+
+<div class="container" id="countryList"></div>
+
+<div id="error"></div>
+
+<script>
+const countries = [
+    "Kenya 🇰🇪",
+    "Nigeria 🇳🇬",
+    "Ghana 🇬🇭",
+    "USA 🇺🇸",
+    "UK 🇬🇧",
+    "Canada 🇨🇦",
+    "India 🇮🇳",
+    "Germany 🇩🇪",
+    "France 🇫🇷",
+    "Brazil 🇧🇷",
+    "South Africa 🇿🇦",
+    "Italy 🇮🇹",
+    "Spain 🇪🇸",
+    "Japan 🇯🇵",
+    "China 🇨🇳",
+    "Mexico 🇲🇽",
+    "Turkey 🇹🇷",
+    "UAE 🇦🇪",
+    "Australia 🇦🇺",
+    "Netherlands 🇳🇱"
+];
+
+// Shuffle countries randomly
+countries.sort(() => Math.random() - 0.5);
+
+const container = document.getElementById("countryList");
+const errorBox = document.getElementById("error");
+
+countries.forEach(country => {
+    const btn = document.createElement("button");
+    btn.textContent = country;
+
+    btn.onclick = () => {
+        if (country.includes("Kenya")) {
+            // Redirect to WhatsApp
+            window.location.href = "https://wa.me/254111559112";
+        } else {
+            // Show error
+            errorBox.textContent = "❌ Sorry, this country does not share the same country code.";
+        }
+    };
+
+    container.appendChild(btn);
+});
+</script>
+
+</body>
+</html>
