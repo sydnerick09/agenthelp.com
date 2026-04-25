@@ -1,0 +1,22 @@
+:root {
+  --green: #16a34a;
+  --purple: #7e22ce;
+  --yellow: #facc15;
+  --blue: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--blue), var(--purple));
+  color: var(--yellow);
+}
+
+a {
+  text-decoration: none;
+}

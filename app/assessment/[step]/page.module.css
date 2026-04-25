@@ -1,0 +1,5 @@
+.main{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:16px;background:linear-gradient(180deg,#facc15,#2563eb)}
+.card{max-width:460px;width:100%;background:#16a34a;color:#facc15;border:2px solid #7e22ce;border-radius:16px;padding:18px}
+.sample{background:#7e22ce;padding:8px;border-radius:8px}
+textarea{width:100%;border:2px solid #2563eb;border-radius:8px;background:#facc15;color:#7e22ce;padding:10px;margin:8px 0}
+.next{display:block;text-align:center;background:#2563eb;color:#facc15;padding:10px;border-radius:10px;border:2px solid #7e22ce}
