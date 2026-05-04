@@ -1,0 +1,1 @@
+.shell{min-height:100vh;display:flex;align-items:center;justify-content:center;background:#fff7f2}.panel{background:#fff;padding:2rem;border-radius:20px;box-shadow:0 8px 20px rgba(0,0,0,.1);display:grid;gap:.8rem;min-width:320px}.panel input,.panel button{padding:.75rem;border-radius:12px;border:1px solid #ddd}.panel button{background:#ea580c;color:#fff;border:0}
